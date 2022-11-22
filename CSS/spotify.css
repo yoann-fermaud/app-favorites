@@ -345,3 +345,28 @@ footer i:hover {
     background-color: #1DB954;
     border-radius: 100px;
 }
+
+@media all and (max-width: 768px) {
+
+    .sideNav {
+      width: 100px;
+      padding: 10px 0 0 10px;
+    }
+    .logo img {
+        max-width: 80px;
+    }
+    .sideNav span {
+      display: none;
+    }
+    .menuLink i {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    main {
+        margin-left: 100px;
+      }
+    .about, .download {
+        width: 500px;
+    }
+}

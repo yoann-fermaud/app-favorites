@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background: url(../img/netflix_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topNav {
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+}
+
+.pt-topNav {
+    margin: 0 40px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.pt-topNav img {
+    max-width: 150px;
+    background-color: transparent;  
+}
+
+.pt-topNav p {
+    margin: 0 10px;
+}
+
+.pt-topNav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.pt-topNav ul li {
+    margin-right: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pt-topNav ul li:first-child:hover span {
+    color: #1DB954;
+    transition: .5s;
+}
+
+.pt-topNav ul li:nth-child(2):hover span{
+    color: #E50914;
+    transition: .5s;
+}
+
+.pt-topNav ul li:nth-child(3):hover span{
+    color: #6034B2;
+    transition: .5s;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.about {
+    margin: 20px 2px;
+    padding: 30px 50px;
+    width: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+.about h1 {
+    margin: 10px 0;
+    color: #E50914;
+    font-size: 70px;
+}
+
+.about p {
+    margin: 10px 0;
+    padding: 5px 2px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about a {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #E50914;
+    border: none;
+    border-radius: 8px;
+}
+
+.about:hover {
+    box-shadow: 0px 0px 100px #E50914;
+    transition: .5s;
+}
+
+.about a:hover {
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.about a:not(:hover) {
+    letter-spacing: 0px;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.sub {
+    margin: 0 2px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.pt-sub {
+    margin: 20px 2px;
+    padding: 30px 50px;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+.pt-sub h1 {
+    margin: 10px 0;
+    font-size: 42px;
+}
+
+.pt-sub p {
+    margin: 10px 0;
+    padding: 5px 2px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.pt-sub img {
+    width: 599px;
+    height: auto;
+}
+
+.pt-sub:hover {
+    box-shadow: 0px 0px 100px #E50914;
+    transition: .5s;
+}
+
+.oth {
+    margin: 20px 2px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+.pt-oth {
+    margin: 0 2px;
+    padding: 30px 50px;
+    width: 600px;
+}
+
+.pt-right {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column wrap;
+}
+
+.pt-left {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+
+.pt-oth a {
+    margin: 0 0 10px 0;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #E50914;
+    border: none;
+    border-radius: 8px;
+}
+
+.pt-oth p {
+    margin: 10px 0;
+    padding: 5px 2px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.oth:hover {
+    box-shadow: 0px 0px 100px #E50914;
+    transition: .5s;
+}
+
+.pt-oth a:hover {
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.pt-oth a:not(:hover) {
+    letter-spacing: 0px;
+    transform: scale(1);
+    transition: .5s;
+}
+
+footer {
+    margin-top: 20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: rgba(21, 21, 21, .9);
+    font-size: 15px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.tab {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.pt-tab {
+    margin: 20px 60px;
+    padding: 20px 10px;
+    width: 200px;
+}
+
+.pt-tab p {
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+.pt-tab p:hover {
+    color: #E50914;
+    transition: .5s;
+}
+
+@media all and (max-width: 768px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .oth {
+        margin: 20px 2px;
+        padding: 0;
+    }
+}
