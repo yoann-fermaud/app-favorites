@@ -11,15 +11,6 @@ body {
     background-color: #191414;
 }
 
-/* SHARED */
-
-/* body {
-    height: 100%;
-    background: linear-gradient(90deg, #191414, #1DB954);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
 /* SIDENAV */
 
 .sideNav {
@@ -77,11 +68,11 @@ body {
 
 main {
     margin: 0 0 40px 285px;
-    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    /* overflow: hidden; */
 }
 
 .navTop {
@@ -120,7 +111,7 @@ main {
 }
 
 .about {
-    margin: 10px 2px;
+    margin: 20px 2px;
     padding: 30px 40px;
     width: 600px;
     height: 100%;
@@ -135,6 +126,7 @@ main {
 .about h1 {
     margin-bottom: 40px;
     padding: 5px 0;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -148,6 +140,7 @@ main {
     margin: 10px 0;
     padding: 5px 2px;
     font-size: 16px;
+    text-align: justify;
 }
 
 .about ul {
@@ -163,7 +156,7 @@ main {
 }
 
 .about:hover {
-    box-shadow: 20px 20px 100px #1DB954;
+    box-shadow: 0px 0px 100px #1DB954;
     transition: .5s;
 }
 
@@ -181,6 +174,7 @@ main {
 .premium h1 {
     margin-bottom: 40px;
     padding: 5px 0;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -204,7 +198,7 @@ main {
     height: 250px;
     text-align: center;
     /* background-color: rgba(255, 255, 255, .05); */
-    background: linear-gradient(180deg, #1DB954, #191414);
+    background: linear-gradient(180deg, #1db954b4, #191414);
     backdrop-filter: blur(10px);
     border-radius: 8px;
 }
@@ -221,13 +215,80 @@ main {
 }
 
 .premium ul li:hover {
-    width: 270px;
-    height: 270px;
-    transition: .5s;
+    background: linear-gradient(180deg, #1DB954, #191414);
     letter-spacing: 1px;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
-.bar {
+.premium ul li:not(:hover) {
+    background: linear-gradient(180deg, #1db954b4, #191414);
+    letter-spacing: 0px;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.download {
+    margin: 20px 2px 100px 2px;
+    padding: 30px 40px;
+    width: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 8px;
+}
+
+.download h1 {
+    margin-bottom: 40px;
+    padding: 5px 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.download h2 {
+    margin: 15px 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.download p {
+    margin: 10px 0;
+    padding: 5px 2px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.download-a {
+    display: flex;
+    justify-content: center;
+}
+
+.download-a a {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 100px;
+}
+
+.download-a a:hover {
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.download-a a:not(:hover) {
+    letter-spacing: 0px;
+    transform: scale(1);
+    transition: .5s;
+}
+
+footer {
     padding: 10px 2px;
     width: 100%;
     height: 60px;
@@ -243,8 +304,8 @@ main {
     /* overflow: hidden; */
 }
 
-.bar ul {
-    width: auto;
+footer ul {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,19 +313,19 @@ main {
     cursor: pointer;
 }
 
-.bar ul li {
+footer ul li {
     margin: 0 10px;
 }
 
-.bar i {
+footer i {
     font-size: 22px;
 }
 
-.bar ul li:nth-child(3) i{
+footer ul li:nth-child(3) i{
     font-size: 32px;
 }
 
-.bar i:hover {
+footer i:hover {
     color: #1DB954;
     transition: .5s;
 }
