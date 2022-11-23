@@ -91,16 +91,20 @@ main {
 }
 
 .about h1 {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     color: #E50914;
     font-size: 70px;
 }
 
 .about p {
-    margin: 10px 0;
+    margin: 0 0 20px 0;
     padding: 5px 2px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: justify;
+}
+
+.about-a {
+    color: rgba(255, 255, 255, .6);
 }
 
 .about a {
@@ -160,7 +164,7 @@ main {
 .pt-sub p {
     margin: 10px 0;
     padding: 5px 2px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -221,7 +225,7 @@ main {
 .pt-oth p {
     margin: 10px 0;
     padding: 5px 2px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: justify;
 }
 

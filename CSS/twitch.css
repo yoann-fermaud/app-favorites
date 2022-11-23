@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: Inter,Roobert,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #191414;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18181B;
+    border-bottom: 1px solid #000;
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-nav-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav-search input {
+    padding: 5px 10px;
+    width: 350px;
+    height: 35px;
+    display: block;
+    background-color: #3D3D3D;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.top-nav-search button {
+    margin-left: 2px;
+    width: 40px;
+    height: 35px;
+    background-color: #252525;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.top-nav-search button i {
+    font-size: 20px;
+}
+
+.pt-top-nav {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.pt-top-nav img {
+    padding: 10px 0 0;
+    max-width: 25px;
+    background-color: transparent;
+}
+
+.pt-top-nav button{
+    margin-right: 20px;
+    padding: 0 10px;
+    height: 35px;
+    background-color: #252525;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pt-top-nav button:nth-child(2) {
+    background-color: #9147FF;
+}
+
+.pt-top-nav button:hover {
+    background-color: #3D3D3D;
+    transition: .5s;
+}
+
+.pt-top-nav button:hover:nth-child(2) {
+    background-color: #6034B2;
+    transition: .5s;
+}
+
+.pt-case-nav a:hover, .pt-hover-fa a i:hover {
+    color: #9147FF;
+    transition: .5s;
+}
+
+/* SIDENAV */
+
+.side-nav {
+    padding: 50px 5px 0 5px;
+    width: 240px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #1F1F20;
+    z-index: 1;
+}
+
+.side-nav h2 {
+    margin: 10px;
+    padding: 5px 0 0;
+    font-size: 15px;
+}
+
+.side-nav a {
+    padding: 5px 10px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+}
+
+.layout-pp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-pp img {
+    padding: 5px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.pt-layout {
+    margin: 0 10px;
+}
+
+.pt-layout-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pt-layout-row {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.overflow-p {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.online-red {
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #EB0400;
+    border-radius: 100%;
+}
+
+.side-nav a:hover {
+    background-color: rgba(50, 50, 50, .4);
+}
+
+.pt-layout p:nth-child(1) {
+    width: 100px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.pt-layout p:nth-child(2) {
+    color: rgba(255, 255, 255, .6);
+    font-size: 15px;
+}
+
+main {
+    margin: 20px 0 40px 250px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-flow: column wrap;
+    /* overflow: hidden; */
+}
+
+.browse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.browse h1 {
+    margin-bottom: 20px;
+    font-size: 54px;
+}
+
+.browse-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.browse-app a {
+    margin: 10px 20px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #6034B2;;
+    border-radius: 5px;
+}
+
+.pt-browse-app  p {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.browse-app a:hover {
+    background-color: #9147FF;
+}
