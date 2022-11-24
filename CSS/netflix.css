@@ -60,12 +60,12 @@ body {
 }
 
 .pt-topNav ul li:first-child:hover span {
-    color: #1DB954;
+    color: #E50914;
     transition: .5s;
 }
 
 .pt-topNav ul li:nth-child(2):hover span{
-    color: #E50914;
+    color: #1DB954;
     transition: .5s;
 }
 
